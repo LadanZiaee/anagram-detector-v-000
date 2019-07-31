@@ -6,12 +6,12 @@ class Anagram
   end
   
   def match(array)
-    new_array = []
+    empty_array = []
     array.split(" ").map do |word|
       if word.split("").sort == @words.split("").sort
-        word
+        word.join
       else
-        new_array
+        empty_array
       end
     end
   end
