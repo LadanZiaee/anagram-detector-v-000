@@ -6,8 +6,7 @@ class Anagram
   end
   
   def match(array)
-    new_array = []
-    if array
+    
     
   end
 end
