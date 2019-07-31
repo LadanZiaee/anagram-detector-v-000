@@ -3,5 +3,10 @@ class Anagram
   
   def initialize(word)
     @words = word
+  end
   
+  def match(array)
+    
+    
+  end
 end
