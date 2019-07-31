@@ -9,7 +9,7 @@ class Anagram
     empty_array = []
     array.map do |word|
       if word.split("").sort == @words.split("").sort
-        word.join
+        word
       else
         empty_array
       end
