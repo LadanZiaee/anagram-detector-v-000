@@ -7,9 +7,11 @@ class Anagram
   
   def match(array)
     empty_array = []
+    new_array = []
     array.map do |word|
       if word.split("").sort == @words.split("").sort
-        word
+        new_array << word
+        new_array
       else
         empty_array
       end
