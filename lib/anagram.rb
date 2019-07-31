@@ -7,12 +7,12 @@ class Anagram
   
   def match(array)
     new_array = []
-    if @words.split("").sort == array.split("").sort
-      new_array << array
-      new_array
-    else
-      new_array
+    array.split(" ").map do |word|
+      if word.split("").sort == @words.split("").sort
+        word
+      else
+        new_array
+      end
     end
-    
   end
 end
